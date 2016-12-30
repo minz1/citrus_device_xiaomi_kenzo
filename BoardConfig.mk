@@ -143,6 +143,9 @@ TARGET_SYSTEM_PROP += device/xiaomi/kenzo/system.prop
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QC_TIME_SERVICES := true
 
+# RAMDISK 
+TARGET_USE_CM_RAMDISK := true
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_F2FS := true
