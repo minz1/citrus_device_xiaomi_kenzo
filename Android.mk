@@ -25,7 +25,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter hydrogen kenzo,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),kenzo)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
@@ -37,6 +37,6 @@ $(shell mkdir -p $(TARGET_OUT)/etc/firmware/wlan/prima; \
 	ln -sf /data/misc/wifi/WCNSS_qcom_cfg.ini \
 		$(TARGET_OUT)/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini)
 
-include device/xiaomi/msm8956-common/tftp.mk
+include device/xiaomi/kenzo/tftp.mk
 
 endif
