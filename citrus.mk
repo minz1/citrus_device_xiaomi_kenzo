@@ -42,3 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=Xiaomi/kenzo/kenzo:6.0.1/MMB29M/6.11.24:user/release-keys \
     PRIVATE_BUILD_DESC="kenzo-user 6.0.1 MMB29M 6.11.24 release-keys"
 endif
+
+# CAF REVISION
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.caf.branch=LA.BR.1.3.6_RB1.11
